@@ -1,0 +1,9 @@
+FROM jupyter/minimal-notebook:python-3.9.6
+
+WORKDIR /home/jovyan/work
+
+COPY . .
+
+RUN pip install -r requirements.txt
+
+CMD [ "jupyter", "lab", "--no-browser", "--NotebookApp.token=''", "--NotebookApp.password=''" ]
