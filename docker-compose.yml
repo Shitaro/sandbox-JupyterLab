@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.develop
-    container_name: sandbox-jupyterlab
+    container_name: foolish-agv-opt
     environment:
       - JUPYTER_ENABLE_LAB=yes
     ports:
